@@ -1,0 +1,206 @@
+<html>
+<head>
+<title>Scratch Leap Motion Extension</title>
+<link rel="stylesheet" type="text/css" href="style.css"></link>
+</head>
+<body>
+
+<div id="header-container">
+  <header>
+    <h1>Scratch Leap Motion Extension</h1>
+  </header>
+</div>
+
+<div id="content-container">
+
+  <h1>Contents</h1>
+
+  <ul id="nav">
+    <li><a href="#quickstart">Quick Start</a></li>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#equipment">Equipment</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#blocks">Scratch Blocks</a></li>
+    <li><a href="#examples">Example Projects</a></li>
+  </ul>
+
+  <a name="quickstart" />
+  <h1>Quick Start</h1>
+  <p>To use the extension, plug in your Leap Motion controller and <a href="http://scratchx.org?url=http://khanning.github.io/scratch-leapmotion-extension/leapmotion_extension.js">open the Leap Motion extension on ScratchX.org</a>.</p>
+
+  <a name="intro" />
+  <h1>Introduction</h1>
+
+  <p>This <a href="https://scratch.mit.edu">Scratch</a> extension lets you incorporate hand tracking into your projects using the <a href="http://www.leapmotion.com/">Leap Motion</a> controller. For example, you can control a character on the screen by moving your hands around.</p>
+  <img width="600" src="res/screenshot.png" /><br /><em>Example project showing hand and finger tracking using the Leap Motion controller.</em>
+
+  <a name="equipment" />
+  <h1>Equipment</h1>
+
+  <p>You will need access to a <a target="_new" href="https://www.leapmotion.com/product">Leap Motion controller</a></p>
+
+  <a name="getting-started" />
+  <h1>Getting Started</h1>
+
+  <ol>
+    <li>If you haven't already done so, follow the <a target="_new" href="http://leapmotion.com/setup">setup instructions for installing the Leap Motion software</a>.</li> 
+    <li>Connect the Leap Motion controller to your computer's USB port</li>
+    <li><a href="http://scratchx.org/?url=http://khanning.github.io/scratch-leapmotion-extension/leapmotion_extension.js ">Load the Leap Motion extension on ScratchX.</a></li>
+  </ol>
+
+  <h3>Hands</h3>
+
+  <p>The extension is capable of tracking up to two hands at a time. The hands are referred to as either 'hand A' or 'hand B'.</p>
+  <img height=70 src="res/blocks/handlist.png" />
+  <p>The first hand to become visible to the Leap Motion controller is referred to as 'hand A'. It doesn't matter if this is your right or left hand.</p>
+  <p>If a second hand becomes visible it will be referred to as 'hand B'.</p>
+
+  <h3>Fingers</h3>
+
+  <p>The extension is capable of tracking up to ten fingers at a time. Fingers are always assigned to either 'hand A' or 'hand B'. See the <b>Hands</b> section above for details about the hand naming convention.</p>
+
+  Each finger is numbered 1 - 5:<br />
+  <img width=300 src="res/fingernumbering.png" />
+
+  <h3>Tools</h3>
+
+  <p>The extension is capable of tracking up to two tools at a time. A tool is a long straight object like a pencil or a chopstick.</p>
+  <p>Tools are referred to the same way as hands. They are called either 'tool A' or 'tool B'.</p>
+  <img height=75 src="res/blocks/toollist.png" />
+  <p>The first tool to become visible to the Leap Motion controller is referred to as 'tool A'.</p>
+  <p>If a second tool becomes visible it will be referred to as 'tool B'.</p>
+  <img width=600 src="res/toolscreenshot.png" />
+
+  <h3>Gestures</h3>
+
+  <p>The extension can also detect certain gestures you can make with your hand and fingers. Supported gestures are:</p>
+  <img height=150 src="res/blocks/gesturelist.png" />
+  <p><b>Tap</b> - Downward tapping motion with a finger</p>
+  <p><b>Poke</b> - Forward tapping motion with a finger</p>
+  <p><b>Swipe</b> - Moving hand with fingers extended in a straight line across the screen</p>
+  <p><b>Circle</b> - Making a circular movement with a finger</p>
+
+  <a name="blocks" />
+  <h1>Scratch Blocks</h1>
+  <p>This is a brief description of each of the Scratch blocks included with the Leap Motion extension.</p>
+  <br />
+
+  <div class="block">
+  <img height="32" src="res/blocks/handx.png" />
+  <p>Returns the current X position of a hand.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/handy.png" />
+  <p>Returns the current Y position of a hand.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/handz.png" />
+  <p>Returns the current Z position of a hand.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/handrotation.png" />
+  <p>Returns the current rotation of a hand.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="34" src="res/blocks/handvisible.png" />
+  <p>Checks if a hand is visible.</p>
+  </div>
+  
+  <hr />
+
+  <div class="block">
+  <img height="34" src="res/blocks/handclosed.png" />
+  <p>Checks if a hand is closed.</p>
+  </div>
+  
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/fingerx.png" />
+  <p>Returns the current X position of a finger.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/fingery.png" />
+  <p>Returns the current Y position of a finger.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/fingerz.png" />
+  <p>Returns the current Z position of a finger.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/fingerextended.png" />
+  <p>Checks if a finger is extended.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/toolx.png" />
+  <p>Returns the current X position of a tool.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/tooly.png" />
+  <p>Returns the current Y position of a tool.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/toolz.png" />
+  <p>Returns the current Z position of a tool.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="32" src="res/blocks/toolvisible.png" />
+  <p>Checks if a tool is visible.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="52" src="res/blocks/gesturehat.png" />
+  <p>Runs when a gesture is detected.</p>
+  </div>
+
+  <hr />
+
+  <div class="block">
+  <img height="39" src="res/blocks/gesturewait.png" />
+  <p>Waits until a gesture is detected.</p>
+  </div>
+
+  <a name="examples" />
+  <h1>Example Projects</h1>
+
+</div>
+
+<br />
+
+</body>
+</html>
